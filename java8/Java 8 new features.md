@@ -54,3 +54,10 @@ new Thread(() -> {
 			System.out.println(testString);
 		}).start();
 
+
+
+List<String> list = Arrays.asList("***", "**", "****", "*");
+		Collections.sort(list, compLambda);
+
+
+	sort(List<T> list, Comparator<? super T> c)

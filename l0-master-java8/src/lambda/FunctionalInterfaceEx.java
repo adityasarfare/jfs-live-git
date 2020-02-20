@@ -8,7 +8,7 @@ interface FunctionalInterface1 {
 
 	// void test1();
 	static void staticMethod() {
-		System.out.println("Static Method");
+		System.out.println("Static Method 1");
 	}
 
 	default void defaultMethod() {
@@ -21,7 +21,7 @@ interface FunctionalInterface2 extends FunctionalInterface1 {
 
 	// void test1();
 	static void staticMethod() {
-		System.out.println("Static Method");
+		System.out.println("Static Method 2");
 	}
 
 	default void defaultMethod() {
@@ -59,7 +59,8 @@ class Test1 implements FunctionalInterface1 {
 
 public class FunctionalInterfaceEx {
 	public static void main(String[] args) {
-		FunctionalInterface1.staticMethod();
+		FunctionalInterface2.staticMethod();
+		new Test().staticMethod();
 		ArrayList list = new ArrayList();
 		list.add("one");
 		list.add("two");
