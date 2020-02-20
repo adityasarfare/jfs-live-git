@@ -26,23 +26,6 @@ interface TestInterface{
     public abstract void TestMethod();
 }
 
-Task 1 : Two functional interfaces
-Runnable
-Comparable
-
-
-  53: public interface Runnable
-  54: {
-  55:   /**
-  56:    * This method will be called by whoever wishes to run your class
-  57:    * implementing Runnable. Note that there are no restrictions on what
-  58:    * you are allowed to do in the run method, except that you cannot
-  59:    * throw a checked exception.
-  60:    */
-  61:   void run();
-  62: }
-
-Runnable obj =  () ->  { };
 
 # Definition 
 Lambda expressions are implemented using Functional interfaces
