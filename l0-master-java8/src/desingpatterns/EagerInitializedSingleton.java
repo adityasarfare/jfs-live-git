@@ -1,6 +1,6 @@
 package desingpatterns;
 
-public class EagerInitializedSingleton {
+class EagerInitializedSingleton {
 	public static void main(String[] args) {
 		// SingletonEx singletonEx = new SingletonEx();
 		// SingletonEx singletonEx1 = new SingletonEx();
