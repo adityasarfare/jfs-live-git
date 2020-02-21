@@ -57,6 +57,15 @@ class Test1 implements FunctionalInterface1 {
 
 }
 
+@FunctionalInterface
+interface FunctionalInterface3 {
+	public void test();
+}
+
+interface Interface1 extends FunctionalInterface {
+	public void test();
+}
+
 public class FunctionalInterfaceEx {
 	public static void main(String[] args) {
 		FunctionalInterface2.staticMethod();
