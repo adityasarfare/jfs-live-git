@@ -70,3 +70,29 @@ end;
 
 --instant practice
 --convert the pl/sql variable to bind variable...
+variable vEMPLOYEE_ID number;
+
+begin
+select EMPLOYEE_ID into :vEMPLOYEE_ID from DEMPLOYEES where LAST_NAME ='sam';
+--dbms_output.put_line(vEMPLOYEE_ID);
+end;
+
+print vEMPLOYEE_ID;
+select * from DEMPLOYEES where EMPLOYEE_ID = :vEMPLOYEE_ID;
+set autoprint on;
+set autoprint off;
+
+--Substitution Variables
+VARIABLE emp_salary NUMBER
+SET AUTOPRINT ON
+DECLARE
+empno NUMBER(6):=&empno;
+BEGIN
+SELECT salary INTO :emp_salary
+FROM employees WHERE employee_id = empno;
+END;
+/
+
+--practice
+--accept the employee_id dynamically and display the name.
+
