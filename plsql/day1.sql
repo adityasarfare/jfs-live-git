@@ -95,4 +95,13 @@ END;
 
 --practice
 --accept the employee_id dynamically and display the name.
-
+declare
+--s1 create a substitution variable
+--vemployee_id number(6) := &enter_employee_id;
+vemployee_id number(6) := 102;
+vlast_name demployees.last_name%TYPE;
+begin
+select last_name into vlast_name from demployees  
+where employee_id = vemployee_id;
+dbms_output.put_line(vlast_name);
+end;
