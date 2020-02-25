@@ -50,3 +50,14 @@ DBMS_OUTPUT.PUT_LINE ('The sum of salary is '
 || sum_sal);
 END;
 /
+
+--
+--CREATE A function
+CREATE FUNCTION FIRSTFUNCTION
+RETURNS BOOLEAN
+IS
+BEGIN
+RETURN TRUE;
+END;
+
+
