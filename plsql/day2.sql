@@ -1,0 +1,52 @@
+SELECT select_list
+INTO {variable_name[, variable_name]...
+| record_name}
+FROM table
+[WHERE condition];
+
+--BREAKING DOWN THE SYNTAX
+SELECT FIRST_NAME, LAST_NAME
+INTO VFIRST_NAME, VLAST_NAME
+FROM TABLE
+WHERE EMPLOYEE_ID = 'E01';
+
+DECLARE
+VFIRST_NAME VARCHAR2(20);
+VLAST_NAME VARCHAR2(20);
+BEGIN
+    SELECT FIRST_NAME, LAST_NAME
+    INTO VFIRST_NAME , VLAST_NAME
+    FROM EMPLOYEES;
+    dbms_output.put_line('FIRST NAME > ' || VFIRST_NAME || ' LAST NAME > ' || VLAST_NAME);
+END;
+
+--ORA-01422: exact fetch returns more than requested number of rows
+
+--ERROR FIX
+DECLARE
+VFIRST_NAME VARCHAR2(20);
+VLAST_NAME VARCHAR2(20);
+BEGIN
+    SELECT FIRST_NAME, LAST_NAME
+    INTO VFIRST_NAME , VLAST_NAME
+    FROM EMPLOYEES;
+    dbms_output.put_line('FIRST NAME > ' || VFIRST_NAME || ' LAST NAME > ' || VLAST_NAME);
+END;
+
+--PRECISION AND SCALE
+NUMBER(7,3)
+1234.567
+
+
+SET SERVEROUTPUT ON
+DECLARE
+sum_sal NUMBER(10,2);
+deptno NUMBER NOT NULL := 60;
+BEGIN
+SELECT SUM(salary) -- group function
+INTO sum_sal FROM employees
+WHERE department_id = deptno;
+DBMS_OUTPUT.PUT_LINE ('The sum of salary is '
+|| sum_sal);
+END;
+/
