@@ -26,3 +26,9 @@
       3. deleteScores
    3. The procedures should take input parameters (ParticipantID, ObjectiveScore, SubjectiveScore) 
    4. create a function to participant id and return his total score.
+2. Implement a procedure to demonstarte the following exceptions
+   1. NO_DATA_FOUND
+   2. INVALID_CURSOR
+   3. HANDLE ALL OTHER EXCEPTIONS
+3. CREATE A TRIGGER 
+   1. that allows insertion, updation and deletion only during business hours.
