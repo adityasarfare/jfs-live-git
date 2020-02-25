@@ -15,7 +15,7 @@
        BEGIN
        RETURN 5;
        END;
-
+6. Create a view 
 
 # EXTENDED LABS
 1. Requirement : (Evaluation)
