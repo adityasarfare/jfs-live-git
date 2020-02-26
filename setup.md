@@ -1,4 +1,4 @@
-## Setup
+## setting up ide's
 * VScode
 * Eclipse
 
@@ -13,4 +13,4 @@ git commit -m "message"
 
 git push.
    
-
+## set up tomcat
