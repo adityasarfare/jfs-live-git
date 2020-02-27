@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%!int x = 1;%>
+	<%!  int x = 1;%>
 	<%
 		int y = 1;
 	%>
