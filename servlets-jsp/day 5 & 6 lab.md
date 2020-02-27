@@ -29,3 +29,9 @@
 2. Build a Registration Form
    1. Accept data from user.
    2. Display the data in a table.
+
+3. Add some custom fuctionality to our session demo
+   1. print the session id.
+   2. the time when session was created.
+   3. remove an attribute from a session.
+   4. after 1 minute, invalidate the session.
