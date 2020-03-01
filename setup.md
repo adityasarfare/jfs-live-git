@@ -30,7 +30,4 @@ git push.
 2. ----------
 _**3. welcome**_
 
-:airplane:
-
-
-> Hello how are you
+:airplane: Hello how are you
