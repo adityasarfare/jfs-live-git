@@ -22,9 +22,11 @@ class Simple{
 ```
 
 > Success is great  
-`peace is god`  
-** power of now **
-* unleash the power withing *
+`peace is god   ` 
+
+**power of now**  
+
+*unleash the power withing*
 
 ``` javascript
 <!DOCTYPE html>
