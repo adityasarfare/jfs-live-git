@@ -5,24 +5,23 @@ import java.util.List;
 
 import example.model.Product;
 
-public class MySqlDBRepository implements ProductRepository {
+public class OracleRepository implements ProductRepository {
 
 	@Override
 	public List<Product> getProducts() {
-		System.out.println("MySql Repository hit.");
+		System.out.println("Oracle Repository hit.");
 		List<Product> products = new ArrayList<>();
 
 		Product product = new Product();
-		product.setProductId("P03");
-		product.setProductName("React");
+		product.setProductId("P01");
+		product.setProductName("Oracle SQL");
 		products.add(product);
 
 		product = new Product();
 		product.setProductId("P02");
-		product.setProductName("Node");
+		product.setProductName("PLSQL");
 		products.add(product);
 
 		return products;
 	}
-
 }
