@@ -4,6 +4,7 @@
 - A light weight Framework
 - For building enterprise grade applications
 - Helps build loosely coupled systems
+- Supports Interface Driven Development
 - Intergrates with other frameworks like hibernate
 - Follows best practices and has several design patterns baked into it
 - Has numerous modules like spring core, spring mvc, spring REST.
@@ -13,5 +14,6 @@
 
 :atom: The core module
 
-:lock: Build your first spring application  
+:lock: Build your first spring application
+ 
 :key: Use the Core Container for IOC (Inversion Of Control) and DI (Dependency Injection) 
