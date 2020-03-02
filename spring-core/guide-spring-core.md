@@ -18,5 +18,7 @@
 
 :key: Use the Core Container for IOC (Inversion Of Control) and DI (Dependency Injection) 
 
-:one: Download Spring Framework
+:one: Download Spring Framework and add all jars to lib.
 -https://repo.spring.io/release/org/springframework/spring/5.0.2.RELEASE/spring-framework-5.0.2.RELEASE-dist.zip
+
+:two: Create the Spring Bean Definitions (applicationContext.xml)
