@@ -6,7 +6,7 @@
 	<bean name="hotWater" class="HotWater"></bean>
 	<bean name="sugar" class="Sugar"></bean>
 	<bean name="milk" class="Milk"></bean>
-	<bean name="boost" class="Boost" scope="prototype">
+	<bean name="boost" class="Boost" scope="singleton">
 		<constructor-arg index="0" ref="sugar"></constructor-arg>
 		<constructor-arg index="1" ref="milk"></constructor-arg>
 	</bean>
