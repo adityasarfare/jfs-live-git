@@ -20,6 +20,26 @@
 		<servlet-name>xmlServlet</servlet-name>
 		<url-pattern>/xmlconfig</url-pattern>
 	</servlet-mapping>
+
+	<!-- init param for servlet -->
+	<servlet>
+		<servlet-name>InitParamServlet</servlet-name>
+		<servlet-class>config.InitParamServlet</servlet-class>
+		<init-param>
+			<param-name>Day</param-name>
+			<param-value>Monday</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Month</param-name>
+			<param-value>March
+         </param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitParamServlet</servlet-name>
+		<url-pattern>/InitParamServlet</url-pattern>
+	</servlet-mapping>
+
 	<listener>
 		<listener-class>listener.SessionListener</listener-class>
 	</listener>
