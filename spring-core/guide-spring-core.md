@@ -93,6 +93,8 @@ public class App {
 
 ```
 
-:gem:
+:gem: Summary
+
 > DI : dependency injection is a technique whereby one object supplies the dependencies of another object
+
 > IOC :  in traditional programming, the custom code that expresses the purpose of the program calls into reusable libraries to take care of generic tasks, but with inversion of control, it is the framework that calls into the custom, or task-specific, code.
