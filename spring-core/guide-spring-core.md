@@ -18,4 +18,4 @@
 
 :key: Use the Core Container for IOC (Inversion Of Control) and DI (Dependency Injection) 
 :one: Download Spring Framework
--https://repo.spring.io/release/org/springframework/spring/5.0.2.RELEASE/
+-https://repo.spring.io/release/org/springframework/spring/5.0.2.RELEASE/spring-framework-5.0.2.RELEASE-dist.zip
