@@ -3,8 +3,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class CoffeeMachineApp {
 	public static void main(String[] args) {
-		HotWater hotWater = null;
-		Boost boost = null;
+		HotWater hotWater;
+		Boost boost;
 		
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 		hotWater = applicationContext.getBean("hotWater",HotWater.class);
