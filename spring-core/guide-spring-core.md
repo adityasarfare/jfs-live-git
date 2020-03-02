@@ -13,5 +13,5 @@
 
 :atom: The core module
 
-:lock: Build your first spring application
+:lock: Build your first spring application  
 :key: Use the Core Container for IOC (Inversion Of Control) and DI (Dependency Injection) 
