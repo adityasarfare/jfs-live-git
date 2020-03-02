@@ -15,5 +15,7 @@
 :atom: The core module
 
 :lock: Build your first spring application
- 
+
 :key: Use the Core Container for IOC (Inversion Of Control) and DI (Dependency Injection) 
+:one: Download Spring Framework
+-https://repo.spring.io/release/org/springframework/spring/5.0.2.RELEASE/
