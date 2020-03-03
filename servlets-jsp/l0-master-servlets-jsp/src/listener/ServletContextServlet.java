@@ -14,7 +14,7 @@ public class ServletContextServlet extends HttpServlet {
 @Override
 protected void service(HttpServletRequest req, HttpServletResponse resp)
 		throws ServletException, IOException {
-	    resp.getWriter().println(getServletContext().getAttribute("dbusername"));
+	   // resp.getWriter().println(getServletContext().getAttribute("dbusername"));
 	    
 	    ServletContext context = getServletContext();
 	   context.setAttribute("message", "From ServletContextServlet ");
