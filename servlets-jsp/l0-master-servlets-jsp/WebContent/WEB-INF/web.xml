@@ -39,10 +39,22 @@
 		<servlet-name>InitParamServlet</servlet-name>
 		<url-pattern>/InitParamServlet</url-pattern>
 	</servlet-mapping>
+	
+	<context-param>
+		<param-name>dbuser</param-name>
+		<param-value>hr</param-value>
+	</context-param>
 
 	<listener>
 		<listener-class>listener.SessionListener</listener-class>
 	</listener>
 	<!-- <listener> <listener-class>listener.SessionListener2</listener-class> 
 		</listener> -->
+		
+	<listener>
+	<listener-class>listener.ServletContextListenerEx</listener-class>
+	</listener>
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
 </web-app>

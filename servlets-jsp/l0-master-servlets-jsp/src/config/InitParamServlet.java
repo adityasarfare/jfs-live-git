@@ -24,3 +24,4 @@ public class InitParamServlet extends HttpServlet {
 		System.out.println(dayString + " " + monthString);
 	}
 }
+
