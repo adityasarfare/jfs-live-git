@@ -11,7 +11,8 @@
 * Help you switch databases, as it generates the database specific queries
 
 
-:lock:** CRUD with HIBERNATE**
+:lock:** CRUD with HIBERNATE**  
+
 :one: Create the Entity
 
 ``` Java
