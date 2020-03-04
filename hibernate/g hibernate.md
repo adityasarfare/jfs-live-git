@@ -11,7 +11,7 @@
 * Help you switch databases, as it generates the database specific queries
 
 
-:lock:  ** CRUD with HIBERNATE**  
+:lock:  **CRUD with HIBERNATE**  
 
 :one: Create the Entity
 
@@ -47,3 +47,58 @@ public class Product {
 	}
 }
 ```
+
+:two: Configure Hibernate
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+		<property name="hibernate.connection.username">hr</property>
+		<property name="hibernate.connection.password">hr</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<mapping resource="com/domain/model/Product.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>
+```
+
+:three: Configure Hibernate Mapping (for model)
+
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+		<property name="hibernate.connection.username">hr</property>
+		<property name="hibernate.connection.password">hr</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<mapping resource="com/domain/model/Product.hbm.xml" />
+		
+	</session-factory>
+</hibernate-configuration>
+
+```
+
+:four: Configure the hibernate libraries
+
+-http://sourceforge.net/projects/hibernate/files/hibernate4/4.2.21.Final/hibernate-release-4.2.21.Final.zip/download
+
+- copy jar from
+  - hibernate-release-4.2.21.Final\hibernate-release-4.2.21.Final\lib\required
+- to 
+  - lib folder
