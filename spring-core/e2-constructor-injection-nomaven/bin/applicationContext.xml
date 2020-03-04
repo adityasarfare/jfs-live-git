@@ -11,6 +11,5 @@
 		<bean name="productService"
 		class="example.service.ProductServiceImpl">
 		<constructor-arg index="0" ref="productRepository"></constructor-arg>
-	</bean>
-	
+	</bean>	
 </beans>
