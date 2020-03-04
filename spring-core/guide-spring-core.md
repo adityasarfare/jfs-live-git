@@ -119,3 +119,22 @@ public class App {
 > DI : dependency injection is a technique whereby one object supplies the dependencies of another object
 
 > IOC :  in traditional programming, the custom code that expresses the purpose of the program calls into reusable libraries to take care of generic tasks, but with inversion of control, it is the framework that calls into the custom, or task-specific, code.
+
+>Types of DI
+1. Setter Based
+2. Constructor Based
+3. Field Based
+
+:lock: **Dependencies of jars**
+* Manually place jar files
+* Compatible jars
+* Configuring
+* Versioning of jar files
+  
+:key: Maven
+* Automatically download jar files 
+* Automatically update classpath
+* Ensures compatible jars are downloaded
+* Takes care of transitive dependencies
+* Maven has a repository of jars
+* Maven has artifacts you can download

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean name="productRepository" class="example.repository.OracleRepository"> 
+		</bean> -->
+	<bean name="productRepository"
+		class="example.repository.MySqlDBRepository">
+	</bean>
+
+	<bean name="productRepository1"
+		class="example.repository.OracleRepository">
+	</bean>
+
+	<bean name="productService"
+		class="example.service.ProductServiceImpl">
+		<!-- <constructor-arg index="0" ref="productRepository"></constructor-arg> -->
+		<property name="productRepository" ref="productRepository1"></property>
+	</bean>
+</beans>
