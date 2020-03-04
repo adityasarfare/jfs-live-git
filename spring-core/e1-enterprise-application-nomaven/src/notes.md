@@ -6,10 +6,10 @@ Enterprise applications are layered by nature.
 Layers :
 1. Repository Layer
    1. Connects to the database
-   2. Service Layer
+2. Service Layer
       1. Provides business logic
       2. Takes care of transactions management
-   3. MVC 
+3. MVC 
       1. Model View Controller Architecture
       2. Has the UI for the client (View)
       3. Contains data for the view (Model)
