@@ -1,4 +1,4 @@
-:books: **Hibernate **
+:books: **Hibernate**
 
 :atom: **Getting Started**
 
