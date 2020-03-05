@@ -11,8 +11,11 @@
 * Help you switch databases, as it generates the database specific queries
 
 `Architecture`  
-![](hibernate&#32;architecture.png)
+![](hibernate-architecture.png)
 
+`jdb vs hibernate`
+
+![](jdbc-vs-hibernate.png)
 :lock:  **CRUD with HIBERNATE**  
 
 :one: Configure the hibernate libraries
