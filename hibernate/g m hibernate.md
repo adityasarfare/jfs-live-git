@@ -21,6 +21,7 @@
   - hibernate-release-4.2.21.Final\hibernate-release-4.2.21.Final\lib\required
 - to 
   - lib folder
+
 :two: Create the Entity
 
 ``` Java
