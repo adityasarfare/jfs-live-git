@@ -134,6 +134,7 @@ public class HibernateUtilities {
 ```
 
 :beetle: Caused by: java.lang.ClassNotFoundException: Could not load requested class : oracle.jdbc.driver.OracleDriver
+> add ojdbc14.jar to classpath
 
 :six: **Create the Application Class and perform Crud operations**
 
