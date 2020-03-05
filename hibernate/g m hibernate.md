@@ -10,6 +10,8 @@
 * Hibernate can automatically create table based on the Java Object (Entity Bean)
 * Help you switch databases, as it generates the database specific queries
 
+`Architecture`
+![](hibernate&#32;architecture.png)
 
 :lock:  **CRUD with HIBERNATE**  
 
