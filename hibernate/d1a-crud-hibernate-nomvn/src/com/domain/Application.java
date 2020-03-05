@@ -1,7 +1,9 @@
 package com.domain;
 
+import java.util.List;
 import java.util.Properties;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -27,13 +29,37 @@ public class Application {
 		Transaction transaction = session.beginTransaction();
 
 		// CREATE THE ENTITY
-		Product product = new Product();
-		product.setProductId("P01");
-		product.setProductName("HIBERNATE");
+//		Product product = new Product();
+//		product.setProductId("P02");
+//		product.setProductName("ANGULAR");
+//		session.save(product);
+		
+//		Product product = new Product();
+//		product.setProductId("P01");
+//		product.setProductName("HIBERNATE");
+//		session.save(product);
 
-		// SAVE THE ENTITY
-		session.save(product);
-
+		// UPDATE THE ENTITY
+//		Product product = (Product) session.get(Product.class, "P01");
+//		product.setProductName("SPRING");
+//		session.update(product);
+		
+		//DELETE THE ENTITY
+//		Product product = (Product) session.get(Product.class, "P01");
+//		session.delete(product);
+		
+		//FETCH THE ENTITY
+//		Product product = (Product) session.get(Product.class, "P01");
+//		System.out.println(product);
+		
+		//FETCH ALL RECORDS
+		Query query = session.createQuery("from Product");
+		List<Product> productsList = query.list();
+		productsList.forEach(System.out::println);
+		
+//		for (Product Product : productsList) {
+//			System.out.println(Product);
+//		}
 		// COMMIT THE TRANSACTION
 		transaction.commit();
 
