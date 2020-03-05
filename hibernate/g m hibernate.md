@@ -133,7 +133,7 @@ public class HibernateUtilities {
 }
 ```
 
-> BUG : Caused by: java.lang.ClassNotFoundException: Could not load requested class : oracle.jdbc.driver.OracleDriver
+:beetle: Caused by: java.lang.ClassNotFoundException: Could not load requested class : oracle.jdbc.driver.OracleDriver
 
 :six: **Create the Application Class and perform Crud operations**
 
