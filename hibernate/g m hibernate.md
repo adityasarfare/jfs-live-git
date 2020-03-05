@@ -98,6 +98,8 @@ public class Product {
     </class>
 </hibernate-mapping>
 
+https://docs.jboss.org/hibernate/orm/3.3/reference/en/html/mapping.html
+https://docs.jboss.org/hibernate/stable/core.old/reference/en/html/mapping-types.html
 ```
 :five: **Craete a Singleton Session Factory**
 
@@ -130,6 +132,9 @@ public class HibernateUtilities {
 	}
 }
 ```
+
+> BUG : Caused by: java.lang.ClassNotFoundException: Could not load requested class : oracle.jdbc.driver.OracleDriver
+
 :six: **Create the Application Class and perform Crud operations**
 
 ``` java
