@@ -108,3 +108,70 @@ public class CustomerDAOImpl implements CustomerDAO {
 }
 
 ```
+
+:electron: **CREATE THE SERVICE LAYER**
+
+```java
+package com.demo.service;
+
+import java.util.List;
+
+import com.demo.entity.Customer;
+
+public interface CustomerService {
+
+	public List<Customer> getCustomers();
+
+	public void saveCustomer(Customer theCustomer);
+
+	public Customer getCustomer(int theId);
+
+	public void deleteCustomer(int theId);
+}
+
+package com.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.demo.dao.CustomerDAO;
+import com.demo.entity.Customer;
+
+@Service
+public class CustomerServiceImpl implements CustomerService {
+	// need to inject customer dao
+	@Autowired
+	private CustomerDAO customerDAO;
+
+	@Override
+	@Transactional
+	public List<Customer> getCustomers() {
+		return customerDAO.getCustomers();
+	}
+
+	@Override
+	@Transactional
+	public void saveCustomer(Customer theCustomer) {
+
+		customerDAO.saveCustomer(theCustomer);
+	}
+
+	@Override
+	@Transactional
+	public Customer getCustomer(int theId) {
+
+		return customerDAO.getCustomer(theId);
+	}
+
+	@Override
+	@Transactional
+	public void deleteCustomer(int theId) {
+
+		customerDAO.deleteCustomer(theId);
+	}
+}
+
+```
